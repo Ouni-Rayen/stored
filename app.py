@@ -178,7 +178,7 @@ def index():
 
     # Set a secret cookie for the bonus challenge
     resp = make_response(render_template_string(INDEX_HTML, comments=comments, success=success))
-    resp.set_cookie("flag", "XSS_STORED_BEGINNER_2024", httponly=False, samesite="Lax")
+    resp.set_cookie("flag", "XSS_STORED_is_c00l", httponly=False, samesite="Lax")
     return resp
 
 @app.route("/reset")
